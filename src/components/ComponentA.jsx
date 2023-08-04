@@ -58,9 +58,9 @@ const ComponentA = ({ nomborA, warnaLatar }) => {
         // Function call by value
         onChange={(event) => handleInput(event)}
       />
-      <button onClick={() => handleColor("blue")}>Blue</button>
-      <button onClick={() => handleColor("red")}>Red</button>
-      <button onClick={() => handleColor("yellow")}>Yellow</button>
+      <button onClick={() => handleColor("blue")}>Biru</button>
+      <button onClick={() => handleColor("red")}>Merah</button>
+      <button onClick={() => handleColor("yellow")}>Kuning</button>
       <div id="warna" style={{ width: 100, height: 100 }}></div>
     </div>
   );
