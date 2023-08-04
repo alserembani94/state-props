@@ -1,15 +1,20 @@
 import "./App.css";
-import HelloReact from "./components/HelloReact";
-import { useState } from "react";
+import ComponentA from "./components/ComponentA";
+import ComponentB from "./components/ComponentB";
+import ComponentC from "./components/ComponentC";
 
 function App() {
-  const [nama, setNama] = useState("Halim");
   return (
     <>
-      <HelloReact
-        nama={nama}
-        umur={23}
-        buahKegemaran={["durian", "rambutan"]}
+      {/* With props */}
+      <ComponentA nomborA="saya" warnaLatar="burlywood" />
+      {/* Without props */}
+      <ComponentB />
+      <ComponentC
+        objekSaya={{
+          nama: "Atif",
+          umur: 29,
+        }}
       />
     </>
   );
